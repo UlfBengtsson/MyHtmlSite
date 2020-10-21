@@ -1,0 +1,41 @@
+body {
+  background-color: lightgray;
+
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main-content main-content"
+    "footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "leftSideLogo . navbar . rightSideLogo";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.leftSideLogo {
+  grid-area: leftSideLogo;
+}
+header > nav {
+  grid-area: navbar;
+}
+.rightSideLogo {
+  grid-area: rightSideLogo;
+}
+
+#main-content {
+  grid-area: main-content;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header > nav > ul > li {
+  list-style-type: none;
+}
