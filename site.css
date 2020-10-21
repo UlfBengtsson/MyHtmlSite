@@ -16,6 +16,7 @@ header {
   grid-template-areas: "leftSideLogo . navbar . rightSideLogo";
   grid-gap: 10px;
   padding: 10px;
+  background-color: rgb(253, 255, 129);
 }
 
 .leftSideLogo {
